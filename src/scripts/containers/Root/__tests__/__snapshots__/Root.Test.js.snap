@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Connected Root state provided by the store Should be a structure 1`] = `
+<Component
+  history={Object {}}
+  store={Object {}}
+/>
+`;

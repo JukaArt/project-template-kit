@@ -1,0 +1,49 @@
+@value minWidth, minHeight from 'Styles/vars/query.css';
+
+.root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  size: 100%;
+  min-height: minHeight;
+}
+
+.main {
+  transition: filter 0.2s linear;
+}
+
+.header {
+  top: 0;
+  z-index: 10;
+  display: block;
+  position: fixed;
+}
+
+.content {
+  min-height: 100vh;
+  min-width: minWidth;
+  margin: 0 auto;
+  padding-bottom: 21px;
+  box-sizing: border-box;
+}
+
+.footer {
+  width: 100%;
+  min-width: minWidth;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.notifications {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  z-index: 20;
+  transform: translate3d(-50%, 0, 0);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  z-index: 30;
+}

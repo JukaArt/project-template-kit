@@ -1,0 +1,37 @@
+.root {
+  top: 0;
+  left: 0;
+  size: 100%;
+  z-index: 20;
+  position: fixed;
+  overflow: auto;
+}
+
+.backdrop {
+  size: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.signup_email,
+.cropper,
+.reset_password {
+  .backdrop {
+    background: rgba(43, 43, 43, 0.9);
+  }
+}
+
+.reset_password_confirm {
+  .backdrop {
+    background: rgba(43, 43, 43, 0.9);
+  }
+}
+
+.how_it_works {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.briefSubmission {
+  display: block;
+}

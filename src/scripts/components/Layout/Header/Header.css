@@ -1,0 +1,44 @@
+@value white from 'Styles/vars/colors.css';
+@value minWidth from 'Styles/vars/query.css';
+
+.root {
+  size: 100% 60px;
+  min-width: minWidth;
+  background: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+.content {
+  size: minWidth 100%;
+  display: flex;
+  margin: 0 auto;
+  padding-left: 18px;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: 3px;
+}
+
+.menu-wrap,
+.user-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  margin-top: 1px;
+  margin-right: 20px;
+}
+
+.user-wrap {
+  display: flex;
+  margin-right: 52px;
+}
+
+.purse {
+  margin-top: 2px;
+  margin-right: 44.4px;
+}

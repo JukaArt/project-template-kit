@@ -1,0 +1,10 @@
+node_modules
+assets
+/dist
+/prod
+/ansible_roles
+/config/deploy/*.retry
+.tmp
+.sass-cache
+.idea
+npm-debug.log

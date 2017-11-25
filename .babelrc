@@ -1,0 +1,25 @@
+{
+  "presets": ["es2017", "latest", "stage-3", "react"],
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-runtime",
+    ["module-resolver", {
+      "alias": {
+        "Api": "./src/scripts/api",
+        "Actions": "./src/scripts/actions",
+        "Reducers": "./src/scripts/reducers",
+        "Util": "./src/scripts/utils",
+        "Helpers": "./src/scripts/helpers",
+        "Components": "./src/scripts/components",
+        "Layout": "./src/scripts/components/Layout",
+        "Page": "./src/scripts/pages",
+        "Selectors": "./src/scripts/selectors",
+        "Constants": "./src/scripts/constants",
+        "Containers": "./src/scripts/containers",
+        "Modal": "./src/scripts/modals",
+        "Sagas": "./src/scripts/sagas",
+        "Locales": "./src/scripts/locales"
+      }
+    }]
+  ]
+}

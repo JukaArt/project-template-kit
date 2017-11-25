@@ -1,0 +1,51 @@
+@value greyishBrown, bgGrey from 'Styles/vars/colors.css';
+@value minWidth from 'Styles/vars/query.css';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  min-width: minWidth;
+  color: greyishBrown;
+  font-family: "Ubuntu";
+  background-color: bgGrey;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background: none !important;
+}
+
+input[type="password"] {
+  font-size: 23px;
+  letter-spacing: 5px;
+}
+
+:global .enter {
+  opacity: 0.01;
+}
+
+:global .enterActive {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+:global .leave {
+  opacity: 1;
+}
+
+:global .leaveActive {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}

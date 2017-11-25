@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700');
+
+@font-face {
+  font-family: "Ionicons";
+  src: url("./ionicons.eot");
+  src: url("./ionicons.eot") format("embedded-opentype"),
+  url("./ionicons.ttf") format("truetype"),
+  url("./ionicons.woff") format("woff"),
+  url("./ionicons.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

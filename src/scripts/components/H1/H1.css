@@ -1,0 +1,10 @@
+.root {
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.type-brief {
+  white-space: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,26 @@
+.root {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  font-family: "Ionicons";
+}
+
+.icon-back-arrow {
+  size: 40px;
+}
+
+.icon-back-arrow::before {
+  content: '\f2ca';
+  top: 5px;
+  left: 4px;
+  font-size: 35px;
+  position: relative;
+}
+
+.icon-close::before {
+  content: '\f404';
+  top: -5px;
+  left: 4px;
+  font-size: 44px;
+  position: relative;
+}

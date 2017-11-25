@@ -1,0 +1,175 @@
+@value greyishBrown, limeGreen, white, darkLimeGreen, green, red from 'Styles/vars/colors.css';
+@value superLightGray from 'Styles/vars/colors.css';
+
+.root {
+  border: none;
+  outline: none;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 2px;
+  color: greyishBrown;
+  font-family: "Ubuntu";
+  box-sizing: border-box;
+  transition: background 0.3s ease-in,
+  border 0.3s ease-in,
+  color 0.3s ease-in;
+}
+
+.content {
+  display: inline-block;
+}
+
+.hasHover {
+  transition: background 0.3s ease-in,
+  border 0.3s ease-in,
+  color 0.3s ease-in;
+}
+
+.enable-false {
+  cursor: default;
+}
+
+.view-video {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+
+  &::before {
+    content: '';
+    size: 0;
+    display: inline-block;
+    padding-left: 9px;
+    top: 2px;
+    left: -13px;
+    position: relative;
+    border-style: solid;
+    border-width: 7.5px 0 7.5px 13px;
+    border-color: transparent transparent transparent white;
+  }
+}
+
+.load-show .content {
+  display: none;
+}
+
+.load-show::before {
+  content: '';
+  size: 30px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  display: block;
+  background-image: url('files/images/icons/preloader.svg');
+  background-size: cover;
+}
+
+/* VIEWS */
+
+.view-switch-lang {
+  padding: 0;
+  font-size: 10px;
+  line-height: 18px;
+}
+
+/* COLORS */
+
+.color-green {
+  background: green;
+}
+
+.color-green-with-border {
+  composes: color-green;
+  border: 1px solid darkLimeGreen;
+}
+
+.color-white-plain {
+  color: white;
+  background: none;
+  border: 1px solid #979797;
+}
+
+.color-white {
+  background: white;
+}
+
+.color-red {
+  background: red;
+}
+
+.color-gray {
+  background: superLightGray;
+}
+
+/* BORDER COLORS */
+
+.border-black {
+  border: 2px solid greyishBrown;
+}
+
+.border-white {
+  border: 1px solid white;
+}
+
+.border-dark-green {
+  border: 1px solid darkLimeGreen;
+}
+
+/* HOVER */
+
+.hover-green {
+  color: white;
+
+  &:hover {
+    color: greyishBrown;
+    background: limeGreen;
+    border-color: limeGreen;
+  }
+}
+
+.hover-lime-green {
+  color: white;
+
+  &:hover {
+    color: greyishBrown;
+    background: green;
+    border-color: green;
+  }
+}
+
+.hover-red {
+  color: white;
+
+  &:hover {
+    background: red;
+    border-color: red;
+  }
+}
+
+.root:hover {
+  .shadow-black {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* BORDER RADIUS */
+
+.radius-100 {
+  border-radius: 100px;
+}
+
+/* ACTIVE */
+
+.state-active {
+  composes: color-green border-dark-green;
+}
+
+.state-noactive {
+  composes: color-gray;
+}

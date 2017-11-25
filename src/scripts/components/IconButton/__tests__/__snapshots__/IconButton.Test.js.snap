@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button test Should be a structure 1`] = `
+<div
+  className="IconNode icon-http://example.com/icon.svg root"
+  onClick={[Function]}
+  style={
+    Object {
+      "color": undefined,
+      "left": "10px",
+      "right": undefined,
+      "top": "10px",
+      "zIndex": undefined,
+    }
+  }
+/>
+`;
